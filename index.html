@@ -22,10 +22,10 @@
           <a href="/index.html">Home</a>
         </li>
         <li class="">
-          <a href="demo/">Demo</a>
+          <a href="https://mirador-dev.netlify.app/__tests__/integration/mirador">Demo</a>
         </li>
         <li class="">
-          <a href="docs/">Docs</a>
+          <a href="https://github.com/projectmirador/mirador/wiki">Docs</a>
         </li>
         <li class="">
           <a href="https://github.com/projectmirador/mirador">Code</a>
@@ -61,61 +61,105 @@
   </section>
 
   <article id="main">
-
+<!-- Feature list -->
     <header class="special container">
       <h2>Fully Featured IIIF Viewer</h2>
       <p>
-      Mirador is a configurable, extensible, and easy-to-integrate image viewer, which enables image annotation and comparison of images from repositories dispersed around the world. Mirador has been optimized to display resources from repositories that support the <a href="http://iiif.io/">International Image Interoperability Framework</a> (IIIF) API's.  It provides a tiling windowed environment for comparing multiple image-based resources, synchronized structural and visual navigation of content using <a href="https://openseadragon.github.io/">OpenSeadragon</a>, <a href="http://www.openannotation.org/">Open Annotation</a> compliant annotation creation and viewing on deep-zoomable canvases, metadata display, book reading, bookmarking and more.
+        Mirador is a configurable, extensible, and easy-to-integrate image viewer, which enables image annotation and comparison of images from repositories dispersed around the world. Mirador has been optimized to display resources from repositories that support the <a href="http://iiif.io/">International Image Interoperability Framework</a> (IIIF) API's. Mirador provides several workspaces for comparing image-based resources, suitable for use in both cultural heritage and research settings.
       </p>
+      <div class="flex-container">
+        <div class="flex-1">
+          <h3>Classic Image Viewer Features</h3>
+          <ul>
+            <li>compare images</li>
+            <li>zoom / pan</li>
+            <li>scroll / book / gallery view</li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <h3>Rich Metadata display</h3>
+          <ul>
+            <li>metadata display: item and canvas level metadata</li>
+            <li>content navigation (table of contents)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="flex-1">
+          <h3>Flexible Configuration</h3>
+          <ul>
+            <li>Multiple workspace types: Mosaic and Elastic</li>
+            <li>Workspace state: easily import and export your workspace</li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <h3>Annotations</h3>
+          <ul>
+            <li>annotation creation through a plugin</li>
+            <li>annotation viewing for OpenAnnotation and W3C Web Annotation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="flex-1">
+          <h3>IIIF API Support</h3>
+          <ul>
+            <li>Supports IIIF v2 and v3 Image and Presentation APIs</li>
+            <li>IIIF Image Level 0 support</li>
+            <li>IIIF Authentication for limited-access resources</li>
+            <li>IIIF Search API for search-within</li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <h3>Multilingual Support</h3>
+          <ul>
+            <li>translated into 9 languages</li>
+            <li>easy to contribute new translations</li>
+            <li>Comprehensive right-to-left support: Mirador implements IIIF viewingDirection and HTML right-to-left can be set via config</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="flex-1">
+          <h3>Customizable Out of the Box</h3>
+          <ul>
+            <li>Rich set of out-of-the-box configuration</li>
+            <li>Themable (your organizations's branding!)</li>
+            <li>Light / Dark mode available</li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <h3>Extensible</h3>
+          <ul>
+            <li>Available as a single JS file or customizable build</li>
+            <li>And if you want more... the plugin framework enables extensive customization</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="flex-1">
+          <h3>Open Source, Community-Driven Software</h3>
+          <ul>
+            <li>built with an accessibility focus</li>
+            <li>friendly developer community</li>
+            <li>continuous integration and testing</li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <section class="wrapper container special-alt">
-      <iframe id="iframe-demo" width="800" height="600" marginwidth="0" marginheight="0" frameborder="10" scrolling="no" id="frame" allowfullscreen="">You need an iFrame capable browser to view this.</iframe>
+      <iframe src="https://mirador-dev.netlify.app/__tests__/integration/mirador/" width="800" height="600" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" id="frame" allowfullscreen="">You need an iFrame capable browser to view this.</iframe>
     </section>
 
-    <section class="wrapper style1 container special">
-      <div class="row">
-        <div class="4u 12u(narrower)">
-          <section>
-            <span class="icon featured fa-github"></span>
-            <header>
-              <h3>Open source</h3>
-            </header>
-            <p>Participate in development on Github. Submit issues, changes, or suggestions, and be a part of the process. You can also join the discussion on the mirador-tech mailing list and slack channel.</p>
-          </section>
-
-        </div>
-        <div class="4u 12u(narrower)">
-
-          <section>
-            <span class="icon featured fa-list"></span>
-            <header>
-              <h3>Full Featured</h3>
-            </header>
-            <p>Mirador implements the full client functionality of the IIIF Image and Presentation APIs. It provides tools for bringing in metadata, images, structures, and can create, edit, delete, and view annotations in Open Annotation Format.</p>
-          </section>
-
-        </div>
-        <div class="4u 12u(narrower)">
-          <section>
-            <span class="icon featured fa-cogs"></span>
-            <header>
-              <h3>Configurable</h3>
-            </header>
-            <p>Mirador can be easily configured to provide the simple functionality of an embedded viewer or bookreader, or opened up into a fully-featured scholarly workspace.</p>
-          </section>
-        </div>
-      </div>
-    </section>
     <header id="participate" class="special container">
       <h2>Participate in the Community</h2>
       <p>
-      Mirador has been built from the needs of the community, and develops through ongoing feedback and discussion. To participate in Mirador's development, bring up your ideas to the <a href="https://groups.google.com/forum/#!forum/mirador-tech">mirador-tech</a> and <a href="https://groups.google.com/forum/#!forum/iiif-discuss">iiif-discuss</a> mailing lists, <a href="http://bit.ly/iiif-slack">IIIF/mirador slack channel</a>, and follow updates on the <a href="https://www.youtube.com/channel/UClcQIkLdYra7ZnOmMJnC5OA">IIIF youtube channel</a>. To suggest features, report bugs, and clarify usage, submit a new github issue at <a href="https://github.com/projectmirador/mirador/issues">https://github.com/projectmirador/mirador/issues</a>.
+      Mirador's development, design, and maintenance is driven by community needs and ongoing feedback and discussion. Join us at our regularly scheduled community calls, on <a href="http://bit.ly/iiif-slack">IIIF slack</a>, or the <a href="https://groups.google.com/forum/#!forum/mirador-tech">mirador-tech</a> and <a href="https://groups.google.com/forum/#!forum/iiif-discuss">iiif-discuss</a> mailing lists. To suggest features, report bugs, and clarify usage, <a href="https://github.com/projectmirador/mirador/issues">submit a GitHub issue</a>.
       </p>
     </header>
     <p/>
   </article>
   <script src="js/jquery.min.js"></script>
-  <script src="js/init.js"></script>
 </body>
 </html>
