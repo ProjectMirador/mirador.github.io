@@ -149,7 +149,7 @@
 		}
 
 		header.special h2 + p {
-			margin-bottom: 0;
+			margin-bottom: 1em;
 			padding-top: 1.5em;
 		}
 
