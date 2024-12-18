@@ -4,15 +4,9 @@ This repository contains the Mirador website.
 
 ### Run locally
 
-To run locally, use a http server
+To run locally, use vite:
+
 ```sh
-$ python -m SimpleHTTPServer
+$ npm install
+$ npm run dev
 ```
-
-or
-
-```sh
-$ http-server # require npm i -g http-server
-``` 
-
-
