@@ -12,17 +12,8 @@
     <div id="mirador" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
     <script type="module">
       import Mirador from 'mirador';
-
-      var params = new URL(document.location).searchParams;
-      var manifest = params.get('iiif-content') || params.get('manifest');
-      var windows = [];
-      if (manifest) {
-        windows.push({ manifestId: manifest});
-      }
-      var miradorInstance = Mirador.viewer({
-        id: 'mirador',
-        windows: windows,
-      });
+      import config from './mirador-configs/default.js';
+      var miradorInstance = Mirador.viewer(config);
     </script>
   </body>
 </html>
